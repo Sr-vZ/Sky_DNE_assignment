@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.6.4 on win32)" generated="20220524 10:38:33.737" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.5 on win32)" generated="20220525 23:33:39.346" rpa="false" schemaversion="3">
 <suite id="s1" name="Sky Dne Tests" source="C:\Users\SrvZ\Desktop\Projects\sky_assignment\Sky_DNE_assignment\sky_dne_tests.robot">
 <test id="s1-t1" name="Do a GET Request and validate the response code and response body" line="10">
 <kw name="Create Session" library="RequestsLibrary">
@@ -7,51 +7,99 @@
 <arg>https://gorest.co.in/</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220524 10:38:34.209" level="INFO">Creating Session using : alias=mysession, url=https://gorest.co.in/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20220524 10:38:34.209" endtime="20220524 10:38:34.210"/>
+<msg timestamp="20220525 23:33:39.955" level="INFO">Creating Session using : alias=mysession, url=https://gorest.co.in/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220525 23:33:39.955" endtime="20220525 23:33:39.956"/>
 </kw>
 <kw name="GET On Session" library="RequestsLibrary">
 <var>${response}</var>
 <arg>mysession</arg>
 <arg>/public/v2/users/</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20220524 10:38:34.451" level="INFO">GET Request : url=https://gorest.co.in/public/v2/users/ 
+<msg timestamp="20220525 23:33:40.189" level="INFO">GET Request : url=https://gorest.co.in/public/v2/users/ 
  path_url=/public/v2/users/ 
- headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220524 10:38:34.451" level="INFO">GET Response : url=https://gorest.co.in/public/v2/users/ 
+<msg timestamp="20220525 23:33:40.190" level="INFO">GET Response : url=https://gorest.co.in/public/v2/users/ 
  status=200, reason=OK 
- headers={'Server': 'nginx', 'Date': 'Tue, 24 May 2022 05:08:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '0', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'X-Pagination-Total': '2906', 'X-Pagination-Pages': '146', 'X-Pagination-Page': '1', 'X-Pagination-Limit': '20', 'X-Links-Previous': '', 'X-Links-Current': 'https://gorest.co.in/public/v2/users?page=1', 'X-Links-Next': 'https://gorest.co.in/public/v2/users?page=2', 'ETag': 'W/"7fa3687835007e7e840ceea9a752bd19"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': '671c2101-186e-4a9f-bc52-6b7798449959', 'X-Runtime': '0.007831', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Content-Encoding': 'gzip'} 
- body=[{"id":2947,"name":"Ujjawal Gupta","email":"ujjawal_gupta@hessel-ferry.info","gender":"female","status":"active"},{"id":2946,"name":"Ganesh Rana","email":"rana_ganesh@collier.org","gender":"male","status":"inactive"},{"id":2945,"name":"Aaratrika Chattopadhyay","email":"chattopadhyay_aaratrika@lind.net","gender":"male","status":"active"},{"id":2938,"name":"The Hon. Madhuri Prajapat","email":"hon_the_prajapat_madhuri@lebsack-lubowitz.org","gender":"male","status":"inactive"},{"id":2937,"name":"Triloki Pilla","email":"pilla_triloki@kub.com","gender":"male","status":"active"},{"id":2936,"name":"Bakula Joshi","email":"joshi_bakula@dach.org","gender":"male","status":"inactive"},{"id":2935,"name":"Devi Deshpande","email":"devi_deshpande@herzog-zieme.com","gender":"female","status":"active"},{"id":2934,"name":"Keerti Acharya","email":"keerti_acharya@sporer-brekke.io","gender":"female","status":"active"},{"id":2933,"name":"Udai Adiga","email":"adiga_udai@corwin.co","gender":"female","status":"inactive"},{"id":2932,"name":"Prof. Bhadrak Gill","email":"gill_bhadrak_prof@williamson.info","gender":"male","status":"active"},{"id":2930,"name":"Laal Dutta","email":"laal_dutta@aufderhar-kuhn.name","gender":"male","status":"inactive"},{"id":2929,"name":"Satish Gupta","email":"satish_gupta@ohara-trantow.io","gender":"male","status":"inactive"},{"id":2928,"name":"Elakshi Gill","email":"gill_elakshi@schowalter-greenholt.io","gender":"male","status":"inactive"},{"id":2927,"name":"Ms. Kiran Chattopadhyay","email":"chattopadhyay_kiran_ms@dickens-beer.info","gender":"male","status":"active"},{"id":2926,"name":"Anish Verma I","email":"i_anish_verma@fahey.biz","gender":"female","status":"inactive"},{"id":2925,"name":"Chaanakya Dubashi","email":"dubashi_chaanakya@crooks.com","gender":"female","status":"inactive"},{"id":2924,"name":"Rameshwar Jha","email":"rameshwar_jha@schmeler.io","gender":"male","status":"active"},{"id":2923,"name":"Satyen Malik","email":"satyen_malik@strosin.co","gender":"male","status":"inactive"},{"id":2922,"name":"Sucheta Abbott I","email":"i_abbott_sucheta@gorczany-koch.io","gender":"male","status":"inactive"},{"id":2921,"name":"Dwaipayan Bhat","email":"dwaipayan_bhat@moore-kris.net","gender":"male","status":"inactive"}] 
+ headers={'Server': 'nginx', 'Date': 'Wed, 25 May 2022 18:03:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '0', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'X-Pagination-Total': '3384', 'X-Pagination-Pages': '170', 'X-Pagination-Page': '1', 'X-Pagination-Limit': '20', 'X-Links-Previous': '', 'X-Links-Current': 'https://gorest.co.in/public/v2/users?page=1', 'X-Links-Next': 'https://gorest.co.in/public/v2/users?page=2', 'ETag': 'W/"5835823b6ba955ff1cb2abcbad7fc210"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': '19d58bf9-734f-4197-9a3e-d81dc22c5f6e', 'X-Runtime': '0.009315', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Content-Encoding': 'gzip'} 
+ body=[{"id":3465,"name":"Mr. Gangesh Chaturvedi","email":"mr_gangesh_chaturvedi@sauer-huels.biz","gender":"female","status":"active"},{"id":3463,"name":"Aashritha Sharma","email":"sharma_aashritha@abernathy.com","gender":"male","status":"active"},{"id":3462,"name":"Abhirath Ahuja","email":"ahuja_abhirath@renner.net","gender":"female","status":"active"},{"id":3461,"name":"Subhasini Bharadwaj","email":"bharadwaj_subhasini@moore.io","gender":"male","status":"inactive"},{"id":3460,"name":"Dhanpati Iyengar","email":"dhanpati_iyengar@beahan-stokes.io","gender":"female","status":"active"},{"id":3459,"name":"Balagopal Bhattathiri","email":"balagopal_bhattathiri@erdman.net","gender":"female","status":"inactive"},{"id":3458,"name":"Akshainie Agarwal","email":"akshainie_agarwal@bogan.com","gender":"male","status":"inactive"},{"id":3457,"name":"Bhoopati Jain","email":"bhoopati_jain@wehner-hilll.com","gender":"male","status":"inactive"},{"id":3456,"name":"Pran Dubashi","email":"dubashi_pran@daniel-beahan.info","gender":"male","status":"inactive"},{"id":3455,"name":"Dr. Himadri Pandey","email":"dr_himadri_pandey@leffler-hintz.biz","gender":"male","status":"inactive"},{"id":3454,"name":"Bhagvan Adiga","email":"bhagvan_adiga@fisher.biz","gender":"female","status":"inactive"},{"id":3453,"name":"Chandramauli Bharadwaj","email":"bharadwaj_chandramauli@bednar-gislason.com","gender":"female","status":"active"},{"id":3452,"name":"Oormila Pothuvaal","email":"oormila_pothuvaal@mann-herman.net","gender":"female","status":"active"},{"id":3450,"name":"Bhagvan Varma","email":"bhagvan_varma@harris-langosh.name","gender":"male","status":"active"},{"id":3449,"name":"Miss Jagathi Banerjee","email":"jagathi_banerjee_miss@lesch-kuvalis.biz","gender":"female","status":"inactive"},{"id":3448,"name":"Msgr. Inder Sharma","email":"inder_sharma_msgr@schmitt-runte.org","gender":"male","status":"active"},{"id":3447,"name":"Krishnadasa Varrier","email":"varrier_krishnadasa@goyette.org","gender":"female","status":"active"},{"id":3446,"name":"Sachin Saini","email":"saini_sachin@rowe-keeling.com","gender":"male","status":"active"},{"id":3445,"name":"Manoj Khan","email":"manoj_khan@blanda.biz","gender":"male","status":"active"},{"id":3444,"name":"Rageswari Gandhi","email":"rageswari_gandhi@rice.net","gender":"male","status":"inactive"}] 
  </msg>
-<msg timestamp="20220524 10:38:34.451" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220524 10:38:34.211" endtime="20220524 10:38:34.452"/>
+<msg timestamp="20220525 23:33:40.191" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220525 23:33:39.957" endtime="20220525 23:33:40.191"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <arg>${response}</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20220524 10:38:34.452" endtime="20220524 10:38:34.453"/>
+<status status="PASS" starttime="20220525 23:33:40.192" endtime="20220525 23:33:40.194"/>
 </kw>
-<doc>This test case verifies that the response code of the GET Request should be 200,
-the response body contains the 'title' key with value as 'London',
-and the response body contains the key 'location_type'.</doc>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20220524 10:38:34.207" endtime="20220524 10:38:34.454"/>
+<doc>This test case verifies that the response code of the GET Request should be 200</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20220525 23:33:39.954" endtime="20220525 23:33:40.195"/>
+</test>
+<test id="s1-t2" name="Verify response has pagination" line="18">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession</arg>
+<arg>https://gorest.co.in/</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220525 23:33:40.203" level="INFO">Creating Session using : alias=mysession, url=https://gorest.co.in/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220525 23:33:40.202" endtime="20220525 23:33:40.204"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/public/v2/users/</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220525 23:33:40.431" level="INFO">GET Request : url=https://gorest.co.in/public/v2/users/ 
+ path_url=/public/v2/users/ 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220525 23:33:40.431" level="INFO">GET Response : url=https://gorest.co.in/public/v2/users/ 
+ status=200, reason=OK 
+ headers={'Server': 'nginx', 'Date': 'Wed, 25 May 2022 18:03:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '0', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'X-Pagination-Total': '3384', 'X-Pagination-Pages': '170', 'X-Pagination-Page': '1', 'X-Pagination-Limit': '20', 'X-Links-Previous': '', 'X-Links-Current': 'https://gorest.co.in/public/v2/users?page=1', 'X-Links-Next': 'https://gorest.co.in/public/v2/users?page=2', 'ETag': 'W/"5835823b6ba955ff1cb2abcbad7fc210"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': 'ada3f556-e170-4720-b37f-b8305dbcca5b', 'X-Runtime': '0.009257', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Content-Encoding': 'gzip'} 
+ body=[{"id":3465,"name":"Mr. Gangesh Chaturvedi","email":"mr_gangesh_chaturvedi@sauer-huels.biz","gender":"female","status":"active"},{"id":3463,"name":"Aashritha Sharma","email":"sharma_aashritha@abernathy.com","gender":"male","status":"active"},{"id":3462,"name":"Abhirath Ahuja","email":"ahuja_abhirath@renner.net","gender":"female","status":"active"},{"id":3461,"name":"Subhasini Bharadwaj","email":"bharadwaj_subhasini@moore.io","gender":"male","status":"inactive"},{"id":3460,"name":"Dhanpati Iyengar","email":"dhanpati_iyengar@beahan-stokes.io","gender":"female","status":"active"},{"id":3459,"name":"Balagopal Bhattathiri","email":"balagopal_bhattathiri@erdman.net","gender":"female","status":"inactive"},{"id":3458,"name":"Akshainie Agarwal","email":"akshainie_agarwal@bogan.com","gender":"male","status":"inactive"},{"id":3457,"name":"Bhoopati Jain","email":"bhoopati_jain@wehner-hilll.com","gender":"male","status":"inactive"},{"id":3456,"name":"Pran Dubashi","email":"dubashi_pran@daniel-beahan.info","gender":"male","status":"inactive"},{"id":3455,"name":"Dr. Himadri Pandey","email":"dr_himadri_pandey@leffler-hintz.biz","gender":"male","status":"inactive"},{"id":3454,"name":"Bhagvan Adiga","email":"bhagvan_adiga@fisher.biz","gender":"female","status":"inactive"},{"id":3453,"name":"Chandramauli Bharadwaj","email":"bharadwaj_chandramauli@bednar-gislason.com","gender":"female","status":"active"},{"id":3452,"name":"Oormila Pothuvaal","email":"oormila_pothuvaal@mann-herman.net","gender":"female","status":"active"},{"id":3450,"name":"Bhagvan Varma","email":"bhagvan_varma@harris-langosh.name","gender":"male","status":"active"},{"id":3449,"name":"Miss Jagathi Banerjee","email":"jagathi_banerjee_miss@lesch-kuvalis.biz","gender":"female","status":"inactive"},{"id":3448,"name":"Msgr. Inder Sharma","email":"inder_sharma_msgr@schmitt-runte.org","gender":"male","status":"active"},{"id":3447,"name":"Krishnadasa Varrier","email":"varrier_krishnadasa@goyette.org","gender":"female","status":"active"},{"id":3446,"name":"Sachin Saini","email":"saini_sachin@rowe-keeling.com","gender":"male","status":"active"},{"id":3445,"name":"Manoj Khan","email":"manoj_khan@blanda.biz","gender":"male","status":"active"},{"id":3444,"name":"Rageswari Gandhi","email":"rageswari_gandhi@rice.net","gender":"male","status":"inactive"}] 
+ </msg>
+<msg timestamp="20220525 23:33:40.432" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220525 23:33:40.205" endtime="20220525 23:33:40.432"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${getHeaderValue}</var>
+<arg>${response.headers}</arg>
+<arg>X-Pagination-Pages</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20220525 23:33:40.445" level="INFO">${getHeaderValue} = 170</msg>
+<status status="PASS" starttime="20220525 23:33:40.433" endtime="20220525 23:33:40.445"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${getHeaderValue}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220525 23:33:40.446" level="INFO">170</msg>
+<status status="PASS" starttime="20220525 23:33:40.446" endtime="20220525 23:33:40.446"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${getHeaderValue} &gt; 1</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220525 23:33:40.447" endtime="20220525 23:33:40.448"/>
+</kw>
+<doc>This test case verifies that the response code header for X-Pagination-Pages</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20220525 23:33:40.199" endtime="20220525 23:33:40.448"/>
 </test>
 <doc>API Testing in Robot Framework</doc>
-<status status="PASS" starttime="20220524 10:38:33.741" endtime="20220524 10:38:34.457"/>
+<status status="PASS" starttime="20220525 23:33:39.351" endtime="20220525 23:33:40.452"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
+<stat pass="2" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Sky Dne Tests">Sky Dne Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Sky Dne Tests">Sky Dne Tests</stat>
 </suite>
 </statistics>
 <errors>
